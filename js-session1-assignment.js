@@ -142,8 +142,6 @@ const input = "5";
 const score = 5;
 
 /*
-Explanation:
-
 The == operator checks only whether the values are equal.
 Before comparing, JavaScript automatically converts the data types.
 
@@ -163,8 +161,6 @@ if (input === score) {
 // 2. Missing Return in Arrow Function
 
 /*
-Explanation:
-
 When an arrow function uses curly braces {},
 we must explicitly return a value.
 
@@ -189,8 +185,6 @@ console.log(doubled);
 const original = [1, 2, 3];
 
 /*
-Explanation:
-
 The push() method directly modifies the original array.
 
 Sometimes we need to keep the original data unchanged
@@ -215,8 +209,6 @@ const userInfo = {
 };
 
 /*
-Explanation:
-
 Many beginners think that a const object cannot be changed.
 
 Actually, const only prevents the variable from pointing
@@ -272,8 +264,6 @@ console.log(typeof a);
 console.log(typeof b);
 
 /*
-Explanation:
-
 null means the value is intentionally empty.
 
 We use null when we want to indicate that a variable
@@ -291,8 +281,6 @@ typeof undefined returns "undefined".
 // 3. Call Order Matters
 
 /*
-Explanation:
-
 Arrow functions are not fully hoisted.
 
 If we try to call the function before it is created,
@@ -316,8 +304,6 @@ and throws an error.
 // 4. Semicolons
 
 /*
-Explanation:
-
 JavaScript allows code to be written with
 or without semicolons in many situations.
 
