@@ -25,3 +25,100 @@ p {
     font-size: 18px;
 
 }
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 20px;
+
+    line-height: 1.6;
+
+}
+
+p {
+
+    background: #e0e7ff;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+}
+
+/* ===================================
+   Mobile First (Default Styles)
+=================================== */
+
+.responsive-box {
+
+    background: #fef3c7;
+
+    padding: 1rem;
+
+    font-size: 0.9rem;
+
+    border-radius: 8px;
+
+    margin-top: 20px;
+
+}
+
+/* ===================================
+   Tablet (768px and above)
+=================================== */
+
+@media (min-width: 768px) {
+
+    .responsive-box {
+
+        background: #d1fae5;
+
+        padding: 2rem;
+
+        font-size: 1rem;
+
+    }
+
+}
+
+/* ===================================
+   Desktop (1024px and above)
+=================================== */
+
+@media (min-width: 1024px) {
+
+    .responsive-box {
+
+        background: #dbeafe;
+
+        padding: 3rem;
+
+        font-size: 1.2rem;
+
+        max-width: 800px;
+
+        margin: 20px auto;
+
+    }
+
+}
+
+/*
+
+min-width applies styles when the screen width is equal to or larger
+than the specified value.
+
+max-width applies styles when the screen width is equal to or smaller
+than the specified value.
+
+This example uses a mobile-first approach because the default styles
+are written for mobile devices, and larger screens are enhanced using
+min-width media queries.
+*/
