@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #dabbbb;
+    color: #333;
+}
+
+/*
+The stylesheet is linked inside the <head> so the browser loads
+the CSS before displaying the webpage.
+
+This prevents the page from first appearing without styles and
+then suddenly changing after the CSS loads, providing a smoother
+user experience.
+*/
+
+
+
+
+h2 {
+    color: #0066cc;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 5px;
+}
+
+
+/*
+   Task B - Class Selector
+ */
+
+.highlight {
+    background-color: #fff3cd;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/* 
+   Task C - ID Selector
+ */
+
+#contact-section {
+    background-color: #e6f7ff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/*
+When both a tag selector and a class selector apply to the same element,
+the class selector takes priority because it has higher specificity.
+
+Specificity order:
+Tag Selector < Class Selector < ID Selector
+*/
+
+/* 
+   Task 2.3 - CSS Cascade
+ */
+
+p {
+    color: black;
+}
+
+.intro-text {
+    color: blue;
+}
+
+#about-paragraph {
+    color: green;
+}
+
+/*
+The paragraph becomes green because the ID selector has
+the highest specificity and overrides both the class and
+tag selectors.
+
+To make the p selector win, we would need to remove the
+class and id from the paragraph or use a more specific
+selector (or !important, which should generally be avoided).
+
+Specificity order (lowest to highest):
+Tag Selector < Class Selector < ID Selector
+*/
+
+/* 
+   Task 3.2 - Navigation
+ */
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin-right: 20px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*
+The href="#about" link points to the element whose id is "about".
+
+When the link is clicked, the browser searches for that id
+and automatically scrolls to that section of the page.
+*/

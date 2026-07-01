@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    padding: 40px;
+
+    background-color: #f4f4f4;
+
+    font-family: Arial, sans-serif;
+
+}
+
+.card {
+
+    width: 320px;
+
+    margin: 0 auto;
+
+    background-color: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+.card img {
+
+    width: 100%;
+
+    display: block;
+
+}
+
+.card header {
+
+    padding: 20px;
+
+}
+
+.card h2 {
+
+    margin: 0;
+
+}
+
+.job-title {
+
+    margin-top: 8px;
+
+    color: gray;
+
+    font-size: 16px;
+
+}
+
+.bio {
+
+    padding: 0 20px;
+
+    line-height: 1.6;
+
+}
+
+.button {
+
+    display: inline-block;
+
+    margin: 20px;
+
+    padding: 12px 20px;
+
+    background-color: #0066cc;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+}
+
+.button:hover {
+
+    background-color: #004d99;
+
+}
+
+/*
+box-shadow: 0 4px 10px rgba(0,0,0,0.15)
+
+0      → Horizontal shadow (no left/right movement)
+
+4px    → Vertical shadow (moves slightly downward)
+
+10px   → Blur radius (makes the shadow softer)
+
+rgba(0,0,0,0.15)
+
+Black shadow with 15% opacity,
+creating a subtle shadow effect.
+*/
