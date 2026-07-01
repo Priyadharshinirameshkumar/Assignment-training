@@ -1,0 +1,177 @@
+/* ===================================
+   Global
+=================================== */
+
+*{
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:Arial,sans-serif;
+
+    margin:20px;
+
+    line-height:1.6;
+
+}
+
+/* ===================================
+   1. CSS Variables
+=================================== */
+
+:root{
+
+    --primary:#4f46e5;
+
+    --secondary:#dbeafe;
+
+    --text:#222;
+
+}
+
+.variable-box{
+
+    background:var(--secondary);
+
+    color:var(--text);
+
+    border-left:6px solid var(--primary);
+
+    padding:20px;
+
+}
+
+/*
+CSS Variables:
+
+Variables are reusable values defined once and used
+throughout the stylesheet.
+
+This makes it easier to update colors and maintain consistency.
+*/
+
+/* ===================================
+   2. Clamp
+=================================== */
+
+.clamp-heading{
+
+    font-size:clamp(1rem,5vw,2.5rem);
+
+    color:var(--primary);
+
+}
+
+/*
+clamp(min, preferred, max)
+
+The font size automatically grows and shrinks
+between 1rem and 2.5rem without media queries.
+*/
+
+/* ===================================
+   3. Grid Template Areas
+=================================== */
+
+.grid-layout{
+
+    display:grid;
+
+    grid-template-columns:200px 1fr;
+
+    grid-template-areas:
+
+    "header header"
+
+    "sidebar main"
+
+    "footer footer";
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.header{
+
+    grid-area:header;
+
+    background:#4f46e5;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+.sidebar{
+
+    grid-area:sidebar;
+
+    background:#ddd;
+
+    padding:20px;
+
+}
+
+.main{
+
+    grid-area:main;
+
+    background:#eee;
+
+    padding:20px;
+
+}
+
+.footer{
+
+    grid-area:footer;
+
+    background:#333;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+/*
+grid-template-areas lets us name sections
+instead of placing them using row and column numbers.
+*/
+
+/* ===================================
+   4. Aspect Ratio
+=================================== */
+
+.aspect-card{
+
+    width:300px;
+
+    aspect-ratio:16/9;
+
+    background:#dbeafe;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-top:20px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+}
+
+/*
+aspect-ratio keeps an element's width and height
+in a fixed proportion even when resized.
+*/
