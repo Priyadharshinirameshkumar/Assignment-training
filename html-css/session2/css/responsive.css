@@ -122,3 +122,89 @@ This example uses a mobile-first approach because the default styles
 are written for mobile devices, and larger screens are enhanced using
 min-width media queries.
 */
+
+/* ===================================
+   Responsive Navigation
+=================================== */
+
+.resp-nav {
+
+    background: #1e1b4b;
+
+    padding: 1rem;
+
+}
+
+.resp-logo {
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 0.5rem;
+
+}
+
+.resp-links {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.5rem;
+
+}
+
+.resp-links a {
+
+    color: #a5b4fc;
+
+    text-decoration: none;
+
+}
+
+.resp-links a:hover {
+
+    color: white;
+
+}
+
+/* ===================================
+   Tablet and Larger Screens
+=================================== */
+
+@media (min-width: 768px) {
+
+    .resp-nav {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+    }
+
+    .resp-logo {
+
+        margin-bottom: 0;
+
+    }
+
+    .resp-links {
+
+        flex-direction: row;
+
+        gap: 1.5rem;
+
+    }
+
+}
