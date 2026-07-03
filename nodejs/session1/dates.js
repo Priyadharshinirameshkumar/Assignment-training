@@ -5,7 +5,7 @@ and loads it so we can use its date functions.
 */
 
 const dayjs = require("dayjs");
-console.log("Today:", dayjs().format("DD MMM YYYY"));
+console.log("Today:", dayjs().format("YYYY-MM-DD"));
 console.log("Day of week:", dayjs().format("dddd"));
 console.log(
     "Next week:",
