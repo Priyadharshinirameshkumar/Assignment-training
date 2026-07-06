@@ -10,11 +10,22 @@ const server = http.createServer((req, res) => {
     if (req.url === "/") {
 
         res.writeHead(200, {
-            "Content-Type": "text/plain"
-        });
+    "Content-Type": "text/html"
+});
 
-        res.end("Home page");
-
+res.end(`
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to Node.js Server</h1>
+    <p>This page is served using HTML.</p>
+</body>
+</html>
+`);
+          
     }
 
     // About route
