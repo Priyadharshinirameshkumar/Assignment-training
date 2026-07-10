@@ -1,25 +1,100 @@
-import InternCard from "./InternCard"
+// import InternCard from "./InternCard"
+
+// function App() {
+//   return (
+//     <div>
+//       <InternCard
+//         name="Rahul"
+//         score={92}
+//         isPresent={true}
+//       />
+
+//       {/* Error: Type 'string' is not assignable to type 'number'.
+//     TypeScript catches this before the app runs, preventing bugs caused
+//     by passing the wrong data type. */}
+
+//     {/* Error: Type 'string' is not assignable to type 'boolean'.
+//     TypeScript ensures only boolean values are passed, avoiding
+//     incorrect logic during runtime. */}
+
+//     {/* Error: Property 'isPresent' is missing.
+//     Required props must always be provided, ensuring the component
+//     receives all the data it needs. */}
+
+//     {/* Error: Property 'age' does not exist on type 'InternCardProps'.
+//     TypeScript prevents passing unexpected props, helping keep
+//     components consistent and easier to maintain. */}
+
+//       <InternCard
+//         name="Priya"
+//         score={78}
+//         isPresent={true}
+//       />
+
+//       <InternCard
+//         name="Amit"
+//         score={45}
+//         isPresent={false}
+//       />
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
+// import ProfileCard from "./ProfileCard"
+
+// function App() {
+//   return (
+//     <div>
+
+//       <ProfileCard
+//         name="Rahul"
+//         role="Frontend"
+//         score={92}
+//       />
+
+//       <ProfileCard
+//         name="Priya"
+//       />
+
+//       <ProfileCard />
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+//task 2.2
+
+import ProfileCard from "./ProfileCard"
 
 function App() {
   return (
     <div>
-      <InternCard
+
+      <ProfileCard
         name="Rahul"
+        role="Frontend"
         score={92}
-        isPresent={true}
+        skills={["React", "TypeScript", "CSS"]}
       />
 
-      <InternCard
+      <ProfileCard
         name="Priya"
-        score={78}
-        isPresent={true}
+        skills={["Node.js", "Express"]}
       />
 
-      <InternCard
-        name="Amit"
-        score={45}
-        isPresent={false}
-      />
+      <ProfileCard />
+
     </div>
   )
 }
