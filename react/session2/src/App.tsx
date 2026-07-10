@@ -232,35 +232,46 @@
 
 
 //task 5.2
-import InternCard from "./InternCard"
+// import InternCard from "./InternCard"
+
+// function App() {
+//   return (
+//     <div>
+
+//       <InternCard
+//         name="Rahul"
+//         score={92}
+//         isPresent={true}
+//         role="Frontend"
+//       />
+
+//       <InternCard
+//         name="Priya"
+//         score={78}
+//         isPresent={true}
+//         role="Backend"
+//       />
+
+//       <InternCard
+//         name="Amit"
+//         score={45}
+//         isPresent={false}
+//         role="Intern"
+//       />
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+//task 6.1
+
+import Dashboard from "./Dashboard"
 
 function App() {
-  return (
-    <div>
-
-      <InternCard
-        name="Rahul"
-        score={92}
-        isPresent={true}
-        role="Frontend"
-      />
-
-      <InternCard
-        name="Priya"
-        score={78}
-        isPresent={true}
-        role="Backend"
-      />
-
-      <InternCard
-        name="Amit"
-        score={45}
-        isPresent={false}
-        role="Intern"
-      />
-
-    </div>
-  )
+  return <Dashboard />
 }
 
 export default App
