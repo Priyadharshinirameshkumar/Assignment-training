@@ -128,43 +128,100 @@
 
 //task 3.2
 
-import InternProfile from "./InternProfile"
-import type { Intern } from "./InternProfile"
+// import InternProfile from "./InternProfile"
+// import type { Intern } from "./InternProfile"
+
+// function App() {
+
+//   const rahul: Intern = {
+//     id: 1,
+//     name: "Rahul",
+//     score: 92,
+//     isPresent: true,
+//     skills: ["HTML", "CSS", "TypeScript", "React"],
+//   }
+
+//   const priya: Intern = {
+//     id: 2,
+//     name: "Priya",
+//     score: 78,
+//     isPresent: true,
+//     skills: ["Node.js", "TypeScript"],
+//   }
+
+//   return (
+//     <div>
+
+//       {/* Passing the original object */}
+//       <InternProfile intern={rahul} />
+
+//       {/* These two are equivalent */}
+//       <InternProfile intern={priya} />
+
+//       <InternProfile intern={{ ...priya }} />
+
+//       {/* The spread operator (...) creates a shallow copy of an object.
+//           It is useful when creating a new object or updating values without
+//           changing the original object. However, using it unnecessarily can
+//           make the code harder to read when the original object can be passed
+//           directly. */}
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+//task 4.1
+
+// import Card from "./Card"
+
+// function App() {
+//   return (
+//     <div>
+
+//       <Card title="Rahul">
+//         <p>Score: 92</p>
+//         <p>Status: Present</p>
+//         <button>View Profile</button>
+//       </Card>
+
+//       <Card title="Announcements">
+//         <ul>
+//           <li>Session 3 tomorrow at 10am</li>
+//           <li>Submit PRs by EOD</li>
+//         </ul>
+//       </Card>
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+//task 4.2
+
+import Card from "./Card"
 
 function App() {
-
-  const rahul: Intern = {
-    id: 1,
-    name: "Rahul",
-    score: 92,
-    isPresent: true,
-    skills: ["HTML", "CSS", "TypeScript", "React"],
-  }
-
-  const priya: Intern = {
-    id: 2,
-    name: "Priya",
-    score: 78,
-    isPresent: true,
-    skills: ["Node.js", "TypeScript"],
-  }
-
   return (
     <div>
 
-      {/* Passing the original object */}
-      <InternProfile intern={rahul} />
+      <Card title="Rahul">
+        <p>Score: 92</p>
+        <p>Status: Present</p>
+        <button>View Profile</button>
+      </Card>
 
-      {/* These two are equivalent */}
-      <InternProfile intern={priya} />
+      <Card title="Announcements">
+        <ul>
+          <li>Session 3 tomorrow at 10am</li>
+          <li>Submit PRs by EOD</li>
+        </ul>
+      </Card>
 
-      <InternProfile intern={{ ...priya }} />
-
-      {/* The spread operator (...) creates a shallow copy of an object.
-          It is useful when creating a new object or updating values without
-          changing the original object. However, using it unnecessarily can
-          make the code harder to read when the original object can be passed
-          directly. */}
+      <Card title="Empty Card" />
 
     </div>
   )
