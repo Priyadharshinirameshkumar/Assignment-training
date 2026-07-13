@@ -84,8 +84,15 @@
 
 
 //task 5.3
-import StopwatchRef from "./StopwatchRef"
+// import StopwatchRef from "./StopwatchRef"
+// function App() {
+//   return <StopwatchRef />
+// }
+// export default App
+
+//task 6.1
+import Dashboard from "./Dashboard"
 function App() {
-  return <StopwatchRef />
+  return <Dashboard />
 }
 export default App
