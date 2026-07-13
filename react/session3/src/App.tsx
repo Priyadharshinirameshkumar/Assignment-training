@@ -91,8 +91,15 @@
 // export default App
 
 //task 6.1
-import Dashboard from "./Dashboard"
+// import Dashboard from "./Dashboard"
+// function App() {
+//   return <Dashboard />
+// }
+// export default App
+
+//self learning
+import SelfLearning from "./SelfLearning"
 function App() {
-  return <Dashboard />
+  return <SelfLearning />
 }
 export default App
