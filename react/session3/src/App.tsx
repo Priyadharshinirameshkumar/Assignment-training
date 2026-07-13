@@ -62,8 +62,30 @@
 // export default App
 
 //task 4.3
-import EscapeHandler from "./EscapeHandler"
+// import EscapeHandler from "./EscapeHandler"
+// function App() {
+//   return <EscapeHandler />
+// }
+// export default App
+
+//task 5.1
+// import FocusInput from "./FocusInput"
+// function App() {
+//   return <FocusInput />
+// }
+// export default App
+
+//task 5.2
+// import RefVsState from "./RefVsState"
+// function App() {
+//   return <RefVsState />
+// }
+// export default App
+
+
+//task 5.3
+import StopwatchRef from "./StopwatchRef"
 function App() {
-  return <EscapeHandler />
+  return <StopwatchRef />
 }
 export default App
