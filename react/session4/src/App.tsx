@@ -109,9 +109,59 @@
 // export default App
 
 
+// import Navbar from './components/Navbar'
+// import AddInternForm from './components/AddInternForm'
+// import InternSearch from './components/InternSearch'
+
+// function App() {
+//   return (
+//     <div>
+//       <Navbar />
+
+//       <div style={{ padding: '20px' }}>
+//         <AddInternForm />
+
+//         <hr />
+
+//         <InternSearch />
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// import Navbar from './components/Navbar'
+// import ScoreStats from './components/ScoreStats'
+// import AddInternForm from './components/AddInternForm'
+// import InternSearch from './components/InternSearch'
+
+// function App() {
+//   return (
+//     <div>
+//       <Navbar />
+
+//       <div style={{ padding: '20px' }}>
+//         <ScoreStats />
+
+//         <AddInternForm />
+
+//         <hr />
+
+//         <InternSearch />
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default App
+
 import Navbar from './components/Navbar'
+import ScoreStats from './components/ScoreStats'
 import AddInternForm from './components/AddInternForm'
 import InternSearch from './components/InternSearch'
+import InternListWithCallback from './components/InternListWithCallback'
 
 function App() {
   return (
@@ -119,11 +169,13 @@ function App() {
       <Navbar />
 
       <div style={{ padding: '20px' }}>
+        <ScoreStats />
+
         <AddInternForm />
 
-        <hr />
-
         <InternSearch />
+
+        <InternListWithCallback />
       </div>
     </div>
   )
