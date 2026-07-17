@@ -1,4 +1,5 @@
 import { render, screen } from '../test/test-utils'
+import { vi, test, expect } from 'vitest'
 import ThemedCard from './ThemedCard'
 
 /*
@@ -82,3 +83,26 @@ test('renders a different name and score without mixing up values', () => {
   expect(screen.getByText('Priya')).toBeInTheDocument()
   expect(screen.getByText('Score: 75')).toBeInTheDocument()
 })
+
+test('no console errors during ThemedCard render', () => {
+  const spy = vi
+    .spyOn(console, 'error')
+    .mockImplementation(() => {})
+
+  render(<ThemedCard name="Rahul" score={92} />)
+
+  expect(spy).not.toHaveBeenCalled()
+
+  spy.mockRestore()
+})
+
+/*
+vi.fn() creates a standalone mock function that records how it is
+called without executing real application logic.
+
+vi.mock() replaces an entire module or selected exports with mock
+implementations so tests can control dependencies.
+
+vi.spyOn() observes an existing function or method, allowing tests
+to verify its usage while optionally replacing its implementation.
+*/
