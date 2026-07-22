@@ -26,8 +26,10 @@ console.log(
 );
 
 /*
-Converts a JSON string into a JavaScript object.
-If the JSON file contains a syntax error
-(such as a missing comma or an unclosed bracket),
-JSON.parse() throws a SyntaxError and the program stops.
+Converts a JSON string into a JavaScript object
+so that the data can be accessed and manipulated
+using JavaScript.
+If the JSON file has a syntax error, such as a missing comma
+or an unclosed bracket, JSON.parse() throws a SyntaxError
+and the program cannot continue until the JSON is corrected.
 */
