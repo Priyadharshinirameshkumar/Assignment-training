@@ -46,6 +46,9 @@ function useInternForm(): UseInternFormReturn {
           ? Number(value)
           : value,
     }))
+    // Clear any previous validation error when the user
+  // starts correcting the form.
+  setError('')
   }
 
   function handleReset(): void {
