@@ -396,3 +396,28 @@ test.describe('Theme Toggle Journey', () => {
 // the exact locator being used. It highlights matching elements in
 // the browser, making it much easier to identify why a locator
 // succeeds or fails compared to reading terminal logs alone.
+
+// Observation from the HTML Report:
+// The HTML report provided additional debugging information beyond
+// the terminal output, including a screenshot of the application at
+// the moment of failure, the exact locator that failed, the call log,
+// and a timeline of browser actions. These details make it much easier
+// to identify and understand the cause of a failed test.
+
+// Trace Viewer Panes:
+//
+// 1. Timeline
+//    Helps identify the exact step where a test failed by replaying
+//    the sequence of browser actions.
+//
+// 2. Screenshots
+//    Shows the visual state of the page at every step, making UI
+//    issues easy to understand.
+//
+// 3. Network
+//    Displays HTTP requests and responses, which is useful when
+//    diagnosing API or backend-related failures.
+//
+// 4. DOM Snapshot
+//    Shows the HTML structure at each step, helping verify whether
+//    an element existed or whether the locator was incorrect.
